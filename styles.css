@@ -75,12 +75,12 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 { 
-    font-size: 50px; 
+    font-size: 45px; 
     margin-top: 20px;
 }
 
 .header-text h1 span{ 
-    font-size: 60px;
+    font-size: 55px;
     color: #ff004f; 
 }
 
@@ -800,4 +800,110 @@ nav ul li a:hover::after{
 
 .scroll-top-btn i {
     pointer-events: none;
+}
+
+/* ------------------- CSS FOR SMALLER SCREENS (PHONES) ------------------- */
+nav .fas{ 
+    display: none; 
+}
+
+@media only screen and (max-width: 650px) { 
+    #header { 
+        background-size: 120%; 
+        background-position: center 5%;
+    }
+
+    .header-text { 
+        margin-top: 120%; 
+        font-size: 16px; 
+    }
+
+    .header-text h1 { 
+        font-size: 30px;
+    }
+
+    nav .fas{ 
+        display: block; 
+        font-size: 25px;
+    }
+
+    nav ul { 
+        background: #ff004f;
+        position: fixed; 
+        top: 0; 
+        right: -200px; 
+        width: 200px; 
+        height: 100vh; 
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s; 
+    }
+
+    nav ul li { 
+        display: block;
+        margin: 25px; 
+    }
+
+    nav ul .fas { 
+        position: absolute; 
+        top: 25px; 
+        left: 25px; 
+        cursor: pointer;
+    }
+
+    .resume-social {
+        margin-top: 5%;
+    }
+
+    .see-more { 
+        margin-top: -5%;
+        margin-bottom: 0;
+    }
+    
+    .see-more i {
+        font-size: 20px;
+    }
+
+    .about-heading { 
+        font-size: 40px;
+        margin-top: 10%;
+    }
+
+    .about-col-1, .about-col-2 { 
+        flex-basis: 100%; 
+    }
+
+    .about-col-1 { 
+        margin-top: 20%;
+    }
+    
+    .about-col-2 { 
+        font-size: 14px;
+    }
+
+    .tab-contents { 
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .experiences-heading { 
+        font-size: 40px;
+    }
+
+    .project-heading { 
+        font-size: 40px;
+    }
+
+    .contact-heading { 
+        font-size: 40px;
+    }
+
+    .contact-left, .contact-right { 
+        flex-basis: 100%;
+    }
+
+    .scroll-top-btn { 
+       
+    }
+
 }

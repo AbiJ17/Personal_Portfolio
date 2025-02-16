@@ -13,16 +13,18 @@
     <div class="container">
         <nav> 
             <img src="Images/logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experiences">Experiences</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contacts">Contact</a></li>
+                <i class="fas fa-times" onClick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onClick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Third Year Computer Science Student at Toronto Metropolitan University</p>
+            <p>Computer Science Student at Toronto Metropolitan University</p>
             <h1>Hello, I'm <br><span class="typing typing-active">Abinash Jegatheeswaran</span></h1>
         </div>
         <div class="resume-social">
@@ -40,8 +42,9 @@
     </div>
 </div>
 <script src="typing.js"></script>
+<script src="navMenu.js"></script>
 
-<!-------------------- ABOUT SECTION ----------------------------------->
+<!-------------------- About  ----------------------------------->
 <div id="about">
     <div class="container">
         <div class="row">
