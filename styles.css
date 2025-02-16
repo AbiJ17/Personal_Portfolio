@@ -807,14 +807,14 @@ nav .fas{
     display: none; 
 }
 
-@media only screen and (max-width: 650px) { 
+@media only screen and (max-width: 600px) { 
     #header { 
         background-size: 120%; 
-        background-position: center 5%;
+        background-position: center 20%;
     }
 
     .header-text { 
-        margin-top: 120%; 
+        margin-top: 150%; 
         font-size: 16px; 
     }
 
@@ -822,6 +822,11 @@ nav .fas{
         font-size: 30px;
     }
 
+    .header-text h1 span{ 
+        font-size: 40px;
+        color: #ff004f; 
+    }
+    
     nav .fas{ 
         display: block; 
         font-size: 25px;
@@ -871,10 +876,6 @@ nav .fas{
 
     .about-col-1, .about-col-2 { 
         flex-basis: 100%; 
-    }
-
-    .about-col-1 { 
-        margin-top: 20%;
     }
     
     .about-col-2 { 
