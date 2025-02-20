@@ -1008,6 +1008,21 @@ nav .fas{
         font-size: 40px;
     }
 
+    .layer {
+        transition: opacity 0.3s ease;
+        pointer-events: none; 
+    }
+
+
+    .layer.active {
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+
+    .work img {
+        cursor: pointer; 
+    }
+
     #prevBtn, #nextBtn {
         font-size: 18px; 
         padding: 10px; 

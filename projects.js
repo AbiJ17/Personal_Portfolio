@@ -59,3 +59,16 @@ prevBtn.addEventListener('click', () => {
 // Start auto-slide initially
 restartAutoSlide();
 
+// Get all the project images
+const projectImages = document.querySelectorAll('.work img');
+const projectLayers = document.querySelectorAll('.work .layer');
+
+// Add event listener for each project image to toggle the display of project info
+projectImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        // Toggle the visibility of the corresponding layer (project info)
+        projectLayers[index].classList.toggle('active');
+    });
+});
+
+
