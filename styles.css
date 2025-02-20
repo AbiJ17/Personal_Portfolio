@@ -1008,26 +1008,58 @@ nav .fas{
         font-size: 40px;
     }
 
-    .layer {
-        transition: opacity 0.3s ease;
-        pointer-events: none; 
+    .work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px; 
     }
 
+    .work img {
+        width: 100%; 
+        height: 300px; 
+        object-fit: cover; 
+        border-radius: 10px;
+    }
 
-    .layer.active {
+    .layer {
+        position: relative;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
         opacity: 1; 
         pointer-events: auto; 
     }
 
-    .work img {
-        cursor: pointer; 
+    .work .layer h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .work .layer p {
+        font-size: 14px;
+    }
+
+    .work .layer a {
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .work .layer a:hover {
+        color: #ff004f;
     }
 
     #prevBtn, #nextBtn {
         font-size: 18px; 
         padding: 10px; 
         position: absolute;
-        top: 50%; 
+        top: 20%; 
         transform: translateY(-50%); 
         background-color: #ff004f; 
         color: white;
