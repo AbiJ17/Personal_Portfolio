@@ -680,7 +680,6 @@ nav ul li a:hover::after{
     transform: scale(1.1); 
 }
 
-
 button {
     background: #ff004f;
     color: white;
@@ -1007,6 +1006,36 @@ nav .fas{
     .project-heading { 
         margin-top: -20%;
         font-size: 40px;
+    }
+
+    #prevBtn, #nextBtn {
+        font-size: 18px; 
+        padding: 10px; 
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%); 
+        background-color: #ff004f; 
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 40px;
+        height: 40px; 
+        z-index: 1; 
+    }
+
+    #prevBtn {
+        left: 10px;
+        margin-left: -35px;
+    }
+
+    #nextBtn {
+        right: 10px; 
+        margin-right: -35px;
+    }
+
+    .project-slider {
+        padding: 0 20px; 
     }
 
     .contact-heading { 
