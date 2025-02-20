@@ -604,92 +604,121 @@ nav ul li a:hover::after{
 
 
 /* ------------------- Projects Section ----------------- */
-#projects { 
+#projects {
     padding: 50px 0;
 }
 
-.project-heading { 
+.project-heading {
     font-size: 50px;
     font-weight: 600;
     color: #fff;
+    text-align: center;
+    margin-bottom: 40px; 
 }
 
-.project-container { 
-    position: relative;
+.project-slider {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px; 
 }
 
-.work-list { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); /* Display 3 projects at a time */
-    grid-gap: 40px; 
-    margin-top: 50px;
+.project-container {
+    width: 600px; 
     overflow: hidden;
+    position: relative;
+}
+
+.work-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
     width: 100%;
 }
 
-.work { 
-    border-radius: 10px; 
+.work {
+    min-width: 100%;
     position: relative; 
-    overflow: hidden; 
-}
-
-.work img { 
-    width: 100%; 
-    height: 500px; 
-    border-radius: 10px; 
-    object-fit: cover;
-    display: block; 
-    transition: transform 0.5s;
-}
-
-.layer{ 
-    width: 100%; 
-    height: 0; 
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f); 
-    border-radius: 10px;
-    position: absolute; 
-    left: 0; 
-    bottom: 0; 
     overflow: hidden;
-    display: flex; 
-    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.work img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.layer {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-direction:column; 
-    padding: 0 40px; 
+    align-items: center;
     text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+    padding: 20px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
 }
 
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px; 
-}
-
-.layer a{
-    margin-top: 20px; 
-    color: #ff004f; 
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
+.work:hover .layer {
+    opacity: 1; 
 }
 
 .work:hover img {
-    transform: scale(1.1);
-}
-
-.work:hover .layer{ 
-    height: 100%; 
+    transform: scale(1.1); 
 }
 
 
+button {
+    background: #ff004f;
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.indicator-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #ff004f; 
+}
 
 /* ------------------------- CONTACTS SECTION ----------------------- */
 .contact-left { 

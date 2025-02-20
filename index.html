@@ -129,7 +129,7 @@
                     <img src="Images/viro_tmu.jpeg">
                     <div class="text-box"> 
                         <h2> Toronto Metropolitan's Environmental Club </h2>
-                        <h3> Research Committee Member </h3>
+                        <h3> Researcher </h3>
                         <small> September 2023 - April 2024</small>
                         <p>Conducted research on environmental issues, contributed to project reports, and participated in discussions to promote sustainability.</p>
                         <span class ="left-container-arrow"> </span>
@@ -163,50 +163,63 @@
     <div id="projects"> 
         <div class="container">
             <h1 class="project-heading">Projects</h1>
-            <div class="project-container">
-                <div class="work-list">
-                    <div class="work">
-                        <img src="Images/Screenshot 2024-09-09 at 10.41.27 PM.png">
-                        <div class="layer">
-                            <h3> WeatherTracker App</h3>
-                            <p> A web application designed to provide real-time weather information and forecasts. Leveraging the OpenWeatherMap API, the application offers up-to-date weather conditions based on user input. Key features include current weather updates, hourly forecasts, and a 3-day weather outlook. 
-                                Built using Python, HTML, CSS, SQL, Flask, Bootstrap, and OpenWeatherMap API. </p>
-                            <a href="https://github.com/AbiJ17/WeatherTracker_App" target="_blank" ><i class="fas fa-external-link-alt"></i></a>
+            <div class="project-slider">
+                <button id="prevBtn">&#10094;</button> 
+                <div class="project-container">
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="Images/Screenshot 2024-09-09 at 10.41.27 PM.png">
+                            <div class="layer">
+                                <h3>WeatherTracker App</h3>
+                                <p> A web application designed to provide real-time weather information and forecasts. Leveraging the OpenWeatherMap API, the application offers up-to-date weather conditions based on user input. Key features include current weather updates, hourly forecasts, and a 3-day weather outlook. 
+                                    Built using Python, HTML, CSS, SQL, Flask, Bootstrap, and OpenWeatherMap API. </p>
+                                <a href="https://github.com/AbiJ17/WeatherTracker_App" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="work">
-                        <img src="Images/Screenshot 2024-09-09 at 10.50.39 PM.png">
-                        <div class="layer">
-                            <h3>Personal Portfolio Website</h3>
-                            <p> A website created to showcase my projects, experiences, skills, and achievements. It features a clean and modern layout, a responsive design for optimal viewing, and a user-friendly interface. 
-                                Built using HTML, CSS, and JavaScript. </p>
-                            <a href="https://github.com/AbiJ17/Personal_Portfolio_HTML" target="_blank" ><i class="fas fa-external-link-alt"></i></a>
+                        <div class="work">
+                            <img src="Images/Screenshot 2024-09-09 at 10.50.39 PM.png">
+                            <div class="layer">
+                                <h3>Personal Portfolio Website</h3>
+                                <p> A website created to showcase my projects, experiences, skills, and achievements. It features a clean and modern layout, a responsive design for optimal viewing, and a user-friendly interface. 
+                                    Built using HTML, CSS, and JavaScript. </p>
+                                <a href="https://github.com/AbiJ17/Personal_Portfolio_HTML" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="work">
-                        <img src="Images/Screenshot 2024-07-24 at 1.06.45 AM.png">
-                        <div class="layer">
-                            <h3>Dance Club Membership Application</h3>
-                            <p> An application designed to streamline the management of a small dance club. It handles the financial and operational tasks of a club, such as practice scheduling, payment processing, and attendance tracking of members. 
-                                Built using React, JavaScript, Tailwind CSS, Axios, Node.js, Express.js, and SQL. </p>
-                            <a href="https://github.com/georgecuiX/DanceSyncRecClub" target="_blank" ><i class="fas fa-external-link-alt"></i></a>
+                        <div class="work">
+                            <img src="Images/Screenshot 2024-07-24 at 1.06.45 AM.png">
+                            <div class="layer">
+                                <h3>Dance Club Membership Application</h3>
+                                <p> An application designed to streamline the management of a small dance club. It handles the financial and operational tasks of a club, such as practice scheduling, payment processing, and attendance tracking of members. 
+                                    Built using React, JavaScript, Tailwind CSS, Axios, Node.js, Express.js, and SQL. </p>
+                                <a href="https://github.com/georgecuiX/DanceSyncRecClub" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="work">
-                        <img src="Images/Screenshot 2024-08-01 at 1.42.46 AM.png">
-                        <div class="layer">
-                            <h3> Rock Paper Scissors Game</h3>
-                            <p> A simple Rock Paper Scissors Game against AI bulit using Java, Java Swing, Java AWT, Java IO, and RANDOM.ORG API. </p>
-                            <a href="https://github.com/AbiJ17/RPS_Game_Java" target="_blank" ><i class="fas fa-external-link-alt"></i></a>
+                        <div class="work">
+                            <img src="Images/Screenshot 2024-08-01 at 1.42.46 AM.png">
+                            <div class="layer">
+                                <h3>Rock Paper Scissors Game</h3>
+                                <p> A simple Rock Paper Scissors Game against AI bulit using Java, Java Swing, Java AWT, Java IO, and RANDOM.ORG API. </p>
+                                <a href="https://github.com/AbiJ17/RPS_Game_Java" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="work"> 
-                        <img src="Images/coming_soon.png">
+                        <div class="work"> 
+                            <img src="Images/coming_soon.png">
+                        </div>
                     </div>
                 </div>
+                <button id="nextBtn">&#10095;</button> 
             </div>
+            <div class="indicator-container"></div>
         </div>
-    </div>
+    </div>      
 
     <!-------------------------contacts-------------------------->
     <div id="contacts">
@@ -244,6 +257,7 @@
 
 <script src="tabs.js"></script>
 <script src="scrollUpButton.js"></script>
+<script src="projects.js"></script>
 
 </body>
 </html>
