@@ -1058,9 +1058,30 @@ nav .fas{
         text-align: center;
     }
 
-    .left-container-arrow, .right-container-arrow { 
-        display: none;
+    .left-container-arrow { 
+        height: 0; 
+        width: 0;
+        position: absolute;
+        top: 20px;
+        z-index: 1; 
+        border-top: 15px solid transparent; 
+        border-bottom: 15px solid transparent; 
+        border-left: 15px solid red; 
+        right: -15px;
     }
+
+    .right-container-arrow { 
+        height: 0; 
+        width: 0;
+        position: absolute;
+        top: 28px;
+        z-index: 1; 
+        border-top: 15px solid transparent; 
+        border-bottom: 15px solid transparent; 
+        border-right: 15px solid red; 
+        left: -15px;
+    }
+
 
     .project-heading { 
         margin-top: -20%;
