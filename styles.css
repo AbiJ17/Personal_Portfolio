@@ -548,15 +548,30 @@ nav ul li a:hover::after{
     color:#b54769;
 }
 
+.text-box h4 {
+    font-weight: 300;
+    color: #6c9bd1;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
 .text-box small { 
     display: inline-block;
     margin-bottom: 15px;
     color:#ff004f;
 }
 
-.text-box p { 
-    font-weight: 200; 
+.text-box p {
+    font-size: 0.95rem;
     color: #ababab;
+    margin: 6px 0;
+    font-weight: 300;
+}
+
+.text-box .edu-label {
+    font-weight: 500;
+    color: #ffffff;         
+    letter-spacing: 0.3px;
 }
 
 .left-container-arrow { 
