@@ -291,7 +291,6 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li::before {
-    
     filter: blur(10px);
     transform: scale(0.95);
 }
@@ -305,11 +304,6 @@ nav ul li a:hover::after{
     opacity: 1;
     transform: scale(1.05);
     box-shadow: 0 0 10px #262626, 0 0 20px #262626, 0 0 30px #262626;
-}
-
-.skills-section, .tab-contents ul li {
-    font-size: 18px;
-    line-height: 1.6;
 }
 
 .tab-contents ul li span {
@@ -457,6 +451,56 @@ nav ul li a:hover::after{
     top: 37px; 
     z-index: 10;
 }
+
+/* ------------------ Skills Section ------------------- */
+.skills-grid{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.skill-card{
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 18px;
+    transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.skill-card:hover{
+    transform: translateY(-4px);
+    border: 1px solid rgba(255,0,79,0.45);
+}
+
+.skill-card h2{
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.skill-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag{
+    font-size: 0.85rem;
+    color: #ababab;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+@media (max-width: 900px){
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* ---------------- Experiences Section ------------------ */
 #experiences { 
