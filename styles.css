@@ -221,6 +221,13 @@ nav ul li a:hover::after{
     margin: 20px 0 40px;
 }
 
+
+.text-box .edu-label {
+    font-weight: 500;
+    color: #ffffff;          
+    letter-spacing: 0.3px;
+}
+
 /* ------------------ Skills Section ------------------- */
 .skills-grid{
     margin-top: 25px;
