@@ -758,7 +758,7 @@ nav .fas{
         width: 200px; 
         height: 100vh; 
         padding-top: 50px;
-        z-index: 2;
+        z-index: 9999;
         transition: right 0.5s; 
     }
 
@@ -772,6 +772,7 @@ nav .fas{
         top: 25px; 
         left: 25px; 
         cursor: pointer;
+        z-index: 10000;
     }
 
     .resume-social {
