@@ -271,6 +271,63 @@ nav ul li a:hover::after{
     border-radius: 999px;
 }
 
+.skill-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.skill-icon{
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 2.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-icon:hover{
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 12px rgba(255,0,79,0.4);
+}
+
+/* Tooltip */
+.skill-icon::after{
+    content: attr(data-label);
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    background: #111;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.skill-icon:hover::after{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.skill-icon img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
 @media (max-width: 900px){
     .skills-grid{
         grid-template-columns: 1fr;
